@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Figuras geométricas</title>
+</head>
+<body>
+    <main>
+        <h1><span class="material-symbols-outlined main-icon">category</span>Figuras geométricas</h1>
+        <div class="container">
+            <h2>Calcular perímetro y área</h2>
+            <div class="card--container">
+                <div class="card">
+                    <h3><span class="material-symbols-outlined icon">crop_square</span>Cuadrado</h3>
+                    <p class="rules">Ingresa las medidas correspondientes:</p>
+                    <label for="lado-cuadrado">
+                        <input type="number" name="lado-cuadrado" id="lado-cuadrado" placeholder="Lado" min="0">
+                        <span>cm</span>
+                    </label>
+                    <div class="result">
+                        <p class="resultPer">Perímetro: 0</p>
+                        <p class="resultArea">Area: 0</p>
+                    </div>
+                    <button class="calc-btn" onclick="calcCuadrado()">Calcular</button>
+                </div>
+                <div class="card">
+                    <h3><span class="material-symbols-outlined">radio_button_unchecked</span>Circulo</h3>
+                    <p class="rules">Ingresa las medidas correspondientes:</p>
+                    <label for="radio-circulo">
+                        <input type="number" name="radio-circulo" id="radio-circulo" placeholder="Lado" min="0">
+                        <span>cm</span>
+                    </label>
+                    <div class="result">
+                        <p class="resultPer-circulo">Perímetro: 0</p>
+                        <p class="resultArea-circulo">Area: 0</p>
+                    </div>
+                    <button class="calc-btn" onclick="calcCirculo()">Calcular</button>
+                </div>
+                <div class="card">
+                    <h3><span class="material-symbols-outlined icon">change_history</span>Triangulo equilátero</h3>
+                    <p class="rules">Ingresa las medidas correspondientes:</p>
+                    <label for="lado-triangulo">
+                        <input type="number" name="lado-triangulo" id="lado-triangulo" placeholder="Lado" min="0">
+                        <span>cm</span>
+                    </label>
+                    <div class="result">
+                        <p class="resultAlt-triangulo">Altura: 0</p>
+                        <p class="resultPer-triangulo">Perímetro: 0</p>
+                        <p class="resultArea-triangulo">Area: 0</p>
+                    </div>
+                    <button class="calc-btn" onclick="calcTrianguloEqui()">Calcular</button>
+                </div>
+                <div class="card">
+                    <h3><span class="material-symbols-outlined icon">change_history</span>Triangulo isósceles</h3>
+                    <p class="rules">Ingresa las medidas correspondientes:</p>
+                    <label for="lado-1-triangulo">
+                        <input type="number" name="lado-triangulo" id="lados-triangulo" placeholder="Lado que se repite" min="0">
+                        <span>cm</span>
+                    </label>
+                    <label for="lado-3-triangulo">
+                        <input type="number" name="lado-triangulo" id="base-triangulo" placeholder="Base" min="0">
+                        <span>cm</span>
+                    </label>
+                    <div class="result">
+                        <p class="resultAlt-trianguloIso">Altura: 0</p>
+                        <p class="resultPer-trianguloIso">Perímetro: 0</p>
+                        <p class="resultArea-trianguloIso">Area: 0</p>
+                    </div>
+                    <p id="status"></p>
+                    <button class="calc-btn" onclick="calcTrianguloIso()">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="tallerFiguras.js"></script>
+</body>
+</html>
